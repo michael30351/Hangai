@@ -1,0 +1,125 @@
+body {
+  position: relative;
+}
+body main {
+  margin-top: 100px;
+}
+body main .news-header {
+  display: flex;
+  position: relative;
+}
+body main .news-header .news-header-text {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+body main .news-header .news-header-text h1 {
+  font-size: 5rem;
+}
+@media only screen and (max-width: 480px) {
+  body main .news-header .news-header-text h1 {
+    font-size: 3rem;
+  }
+}
+body main .news-header .news-header-text p {
+  font-size: 2rem;
+}
+@media only screen and (max-width: 480px) {
+  body main .news-header .news-header-text p {
+    font-size: 1rem;
+  }
+}
+body main .news-header .green-rec {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: rgb(8, 157, 8);
+  -webkit-clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+body main .news-list {
+  width: 100%;
+  margin: 0;
+  margin-top: 100px;
+}
+body main .news-list ul {
+  padding: 20px 20px;
+  width: 98%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+body main .news-list ul li {
+  border-bottom: 2px dotted gray;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 480px) {
+  body main .news-list ul li {
+    flex-direction: column;
+  }
+}
+body main .news-list ul li .news-content {
+  width: 70%;
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 480px) {
+  body main .news-list ul li .news-content {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+body main .news-list ul li .news-content a {
+  width: 100%;
+  letter-spacing: 8px;
+  text-decoration: none;
+  color: black;
+}
+body main .news-list ul li .news-content a:hover {
+  color: gainsboro;
+}
+body main .news-list ul li .news-content-img {
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+}
+@media only screen and (max-width: 480px) {
+  body main .news-list ul li .news-content-img {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+body main .news-list ul li .news-content-img:hover img,
+body main .news-list ul li .news-content-img a:hover + img {
+  filter: brightness(70%);
+  transform: scale(1.2);
+  transition: 1s all;
+}
+body main .news-list ul li .news-content-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 1s all;
+}
+body main .news-list ul li .news-content-img .news-content-more {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  border: 3px solid white;
+  padding: 10px;
+}
+body main .news-list ul li .news-content-img .news-content-more:hover {
+  color: gainsboro;
+}
+body main .news-list .last-news {
+  border: none;
+}/*# sourceMappingURL=news.css.map */

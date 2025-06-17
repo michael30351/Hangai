@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap");
+body .recruit-header {
+  position: relative;
+  height: 100vh;
+}
+body .recruit-header img {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(70%);
+}
+body .recruit-header .rec-title {
+  font-size: 8rem;
+  width: 100%;
+  font-family: "Noto Serif JP", serif;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  text-align: center;
+  color: white;
+}
+body .recruit-header .rec-title span {
+  opacity: 0;
+  display: inline-block;
+  transition: opacity 0.5s;
+}
+body .recruit-header .rec-title span.visible {
+  opacity: 1;
+}
+@media only screen and (max-width: 480px) {
+  body .recruit-header .rec-title {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  body .recruit-header .rec-title {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1300px) {
+  body .recruit-header .rec-title {
+    font-size: 4.7rem;
+  }
+}
+body .recruit-header .recruit-text {
+  position: fixed;
+}
+body .recruit-header .recruit-text p {
+  font-family: "Noto Serif JP", serif;
+  color: white;
+  font-size: 1.5rem;
+  width: 80%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  position: fixed;
+}
+body .recruit-header .recruit-text p span {
+  opacity: 0;
+  display: inline-block;
+  transition: opacity 0.3s;
+}
+body .recruit-header .recruit-text p span.visible {
+  opacity: 1;
+}
+@media only screen and (max-width: 480px) {
+  body .recruit-header .recruit-text p {
+    font-size: 1rem;
+    top: 55%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  body .recruit-header .recruit-text p {
+    width: 60%;
+    font-size: 1.2rem;
+    bottom: 5%;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  body .recruit-header .recruit-text p {
+    width: 60%;
+    font-size: 1.2rem;
+    bottom: 5%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1300px) {
+  body .recruit-header .recruit-text p {
+    width: 75%;
+    font-size: 1.2rem;
+    bottom: 5%;
+  }
+}
+body .recruit-header .cp_arrows {
+  position: relative;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  left: 46%;
+  position: fixed;
+}
+body .recruit-header .cp_arrows *,
+body .recruit-header .cp_arrows *:before,
+body .recruit-header .cp_arrows *:after {
+  box-sizing: border-box;
+}
+body .recruit-header .cp_arrows .cp_arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  opacity: 0;
+}
+body .recruit-header .cp_arrows .cp_arrow.cp_arrowfirst {
+  animation: arrow-move08 2s ease-in-out infinite;
+}
+body .recruit-header .cp_arrows .cp_arrow.cp_arrowsecond {
+  animation: arrow-move08 2s 1s ease-in-out infinite;
+}
+body .recruit-header .cp_arrows .cp_arrow:before, body .recruit-header .cp_arrows .cp_arrow:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 50px;
+  height: 5px;
+  content: "";
+  background: white;
+}
+body .recruit-header .cp_arrows .cp_arrow:before {
+  transform: rotate(30deg) translateX(-39%);
+  transform-origin: top left;
+}
+body .recruit-header .cp_arrows .cp_arrow:after {
+  transform: rotate(-30deg) translateX(39%);
+  transform-origin: top right;
+}
+@keyframes arrow-move08 {
+  0% {
+    top: 40%;
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body main {
+  border-top: 1px solid gainsboro;
+}
+body main .work-title {
+  position: relative;
+}
+body main .work-title h1 {
+  font-size: 8rem;
+  text-align: center;
+  margin: 100px 0;
+  color: gainsboro;
+}
+@media only screen and (max-width: 480px) {
+  body main .work-title h1 {
+    font-size: 3rem;
+  }
+}
+body main .work-title .text-anime {
+  font-size: 4rem;
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50px);
+  opacity: 0;
+}
+@media only screen and (max-width: 480px) {
+  body main .work-title .text-anime {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+body main .work-title .text-anime.active {
+  opacity: 1;
+  transform: translateY(0) translateX(-50%);
+  transition: opacity 1.5s, transform 0.8s;
+}
+body main .work-info {
+  position: relative;
+  display: flex;
+  margin: 0;
+}
+@media only screen and (max-width: 480px) {
+  body main .work-info {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
+body main .work-info .work-info-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 100px;
+}
+@media only screen and (max-width: 480px) {
+  body main .work-info .work-info-content {
+    margin-bottom: 50px;
+  }
+}
+body main .work-info .work-info-content .photo {
+  display: block;
+  width: 70%;
+  height: auto;
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  border-radius: 15px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+@media only screen and (max-width: 480px) {
+  body main .work-info .work-info-content .photo {
+    width: 80%;
+  }
+}
+body main .work-info .work-info-content .photo.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+body main .work-info .work-info-content h2 {
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 30px 0;
+}
+body main .work-info .work-info-content p {
+  font-size: 1.2rem;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+body main .rec-info {
+  z-index: 1000;
+  margin-bottom: 100px;
+}
+body main .rec-info h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 50px 0;
+}
+body main .rec-info table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+@media only screen and (max-width: 480px) {
+  body main .rec-info table {
+    width: 95%;
+  }
+}
+body main .rec-info table th,
+body main .rec-info table td {
+  border: 2px solid rgb(34, 152, 34);
+  padding: 8px;
+  text-align: left;
+}
+body main .rec-info table .td-title {
+  width: 30%;
+  text-align: center;
+}
+body main .contact {
+  font-size: 3rem;
+  text-align: center;
+}
+body main form {
+  width: 50%;
+  min-width: 9rem;
+  margin: auto;
+  margin-bottom: 100px;
+}
+@media only screen and (max-width: 480px) {
+  body main form {
+    width: 300px;
+  }
+}
+body main input,
+body main textarea {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background: #e6e6e6;
+  color: #7a7a7a;
+}
+body main input[type=submit],
+body main textarea[type=submit] {
+  background: rgb(5, 180, 5);
+  color: #fff;
+  width: auto;
+  float: right;
+  cursor: pointer;
+}
+body main input[type=submit]:hover,
+body main textarea[type=submit]:hover {
+  color: gainsboro;
+}
+body main input::-moz-placeholder, body main textarea::-moz-placeholder {
+  color: #7a7a7a;
+}
+body main input::placeholder,
+body main textarea::placeholder {
+  color: #7a7a7a;
+}
+body main input.error,
+body main textarea.error {
+  background: #AD4747;
+  color: #fff;
+}
+body main input.error::-moz-placeholder, body main textarea.error::-moz-placeholder {
+  color: black;
+}
+body main input.error::placeholder,
+body main textarea.error::placeholder {
+  color: black;
+}
+body main textarea {
+  height: 10rem;
+}
+body main .captcha {
+  float: left;
+}
+body main .captcha input {
+  float: right;
+}
+body main .captcha input[name=question] {
+  width: 4rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  text-align: right;
+  padding-right: 0;
+}
+body main .captcha [name=captcha] {
+  width: 5rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-left: 0.5rem;
+}
+body main .captcha [name=captcha]::-moz-placeholder {
+  text-align: center;
+}
+body main .captcha [name=captcha]::placeholder {
+  text-align: center;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(http://themes.googleusercontent.com/static/fonts/opensans/v7/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff");
+}/*# sourceMappingURL=recruit.css.map */

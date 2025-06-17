@@ -1,0 +1,339 @@
+body {
+  position: relative;
+}
+body main .about-header {
+  margin-top: 90px;
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+body main .about-header img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(70%);
+}
+body main .about-header h1 {
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+}
+@media only screen and (max-width: 480px) {
+  body main .about-header h1 {
+    font-size: 3rem;
+  }
+}
+body main .greeting {
+  position: relative;
+  margin-top: 100px;
+}
+body main .greeting h2 {
+  font-size: 9rem;
+  color: gainsboro;
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  body main .greeting h2 {
+    font-size: 4rem;
+  }
+}
+body main .greeting .text-anime {
+  font-size: 3.5rem;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50px);
+  opacity: 0;
+  color: black;
+}
+@media only screen and (max-width: 480px) {
+  body main .greeting .text-anime {
+    font-size: 2rem;
+    top: 31%;
+  }
+}
+body main .greeting .text-anime.active {
+  opacity: 1;
+  transform: translateY(0) translateX(-50%);
+  transition: opacity 1.5s, transform 0.8s;
+}
+body main .greeting-flex {
+  display: flex;
+  margin-top: 50px;
+  height: 600px;
+}
+@media only screen and (max-width: 480px) {
+  body main .greeting-flex {
+    flex-direction: column;
+    height: 150vh;
+    margin-top: 0;
+  }
+}
+body main .greeting-flex .greeting-content {
+  width: 50%;
+  margin: auto;
+  margin-top: 100px;
+}
+@media only screen and (max-width: 480px) {
+  body main .greeting-flex .greeting-content {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  body main .greeting-flex .greeting-content {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1300px) {
+  body main .greeting-flex .greeting-content {
+    width: 70%;
+  }
+}
+body main .greeting-flex .greeting-content p {
+  font-size: 1.2rem;
+  line-height: 40px;
+  margin-left: 3%;
+}
+@media only screen and (max-width: 480px) {
+  body main .greeting-flex .greeting-content p {
+    font-size: 1rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+body main .greeting-flex .greeting-content .boss {
+  margin-top: 30px;
+  text-align: center;
+}
+body main .greeting-flex img {
+  width: 40%;
+  height: 600px;
+  -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 99%, 0% 100%, 37% 48%, 0 0);
+          clip-path: polygon(100% 0, 100% 50%, 100% 99%, 0% 100%, 37% 48%, 0 0);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media only screen and (max-width: 480px) {
+  body main .greeting-flex img {
+    width: 90%;
+    -webkit-clip-path: none;
+            clip-path: none;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  body main .greeting-flex img {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1300px) {
+  body main .greeting-flex img {
+    width: 30%;
+  }
+}
+body main .philosophy {
+  position: relative;
+  margin-top: 100px;
+}
+body main .philosophy h2 {
+  font-size: 9rem;
+  color: gainsboro;
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  body main .philosophy h2 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  body main .philosophy h2 {
+    font-size: 8rem;
+  }
+}
+body main .philosophy .text-anime {
+  font-size: 3.5rem;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50px);
+  opacity: 0;
+  color: black;
+}
+@media only screen and (max-width: 480px) {
+  body main .philosophy .text-anime {
+    font-size: 2rem;
+    top: 31%;
+  }
+}
+body main .philosophy .text-anime.active {
+  opacity: 1;
+  transform: translateY(0) translateX(-50%);
+  transition: opacity 1.5s, transform 0.8s;
+}
+body main .philosophy-content section {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+body main .philosophy-content section h2 {
+  width: 90%;
+  font-size: 2rem;
+  text-align: center;
+  margin: auto;
+  padding: 20px 0;
+}
+@media only screen and (max-width: 480px) {
+  body main .philosophy-content section h2 {
+    font-size: 1.5rem;
+  }
+}
+body main .profile {
+  position: relative;
+  margin-top: 100px;
+}
+body main .profile h2 {
+  font-size: 9rem;
+  color: gainsboro;
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  body main .profile h2 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  body main .profile h2 {
+    font-size: 8rem;
+  }
+}
+body main .profile .text-anime {
+  font-size: 3.5rem;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50px);
+  opacity: 0;
+  color: black;
+}
+@media only screen and (max-width: 480px) {
+  body main .profile .text-anime {
+    font-size: 2rem;
+    top: 31%;
+  }
+}
+body main .profile .text-anime.active {
+  opacity: 1;
+  transform: translateY(0) translateX(-50%);
+  transition: opacity 1.5s, transform 0.8s;
+}
+body main .profile-content {
+  font-size: 1.2rem;
+  margin: auto;
+  width: 60%;
+}
+@media only screen and (max-width: 480px) {
+  body main .profile-content {
+    width: 80%;
+    font-size: 1rem;
+  }
+}
+body main .profile-content ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 40px 0;
+  border-bottom: 2px solid gainsboro;
+}
+body main .profile-content ul li {
+  list-style: none;
+  width: 50%;
+  margin: auto;
+}
+body main footer {
+  height: 300px;
+  border-top: 1px solid gainsboro;
+  position: relative;
+  display: flex;
+  margin-top: 100px;
+  z-index: 200;
+  background: white;
+}
+@media only screen and (max-width: 480px) {
+  body main footer {
+    flex-direction: column;
+    height: 500px;
+  }
+}
+body main footer .icons {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 480px) {
+  body main footer .icons {
+    margin-top: 10px;
+  }
+}
+body main footer .icons .logo {
+  width: 220px;
+  height: 65px;
+  border: none;
+  margin: auto;
+  margin-bottom: 10px;
+}
+body main footer .icons .icon {
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin: auto;
+  margin-bottom: 20px;
+}
+body main footer .icons p {
+  font-size: 1rem;
+  text-align: center;
+}
+body main footer ul {
+  margin: auto;
+  display: flex;
+}
+@media only screen and (max-width: 480px) {
+  body main footer ul {
+    flex-direction: column;
+    margin-top: -30px;
+  }
+}
+body main footer ul li {
+  list-style: none;
+  padding: 0 30px;
+}
+@media only screen and (max-width: 480px) {
+  body main footer ul li {
+    padding: 5px 0;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  body main footer ul li {
+    padding: 5px 0;
+  }
+}
+body main footer ul li a {
+  text-decoration: none;
+  color: rgb(1, 162, 1);
+  font-size: 1.3rem;
+}
+body main footer ul li a:hover {
+  color: gainsboro;
+}
+body main footer .copy-right {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+}/*# sourceMappingURL=about.css.map */

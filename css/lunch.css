@@ -1,0 +1,209 @@
+@charset "UTF-8";
+body main {
+  position: relative;
+}
+body main .gradient .gallery {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+body main .gradient .gallery .row {
+  display: flex;
+}
+body main .gradient .gallery img {
+  width: 20%;
+  /* 20%の幅 */
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(80%);
+}
+@media only screen and (max-width: 480px) {
+  body main .gradient .gallery img {
+    width: 35%;
+  }
+}
+body main .gradient .gallery h1 {
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+}
+@media only screen and (max-width: 480px) {
+  body main .gradient .gallery h1 {
+    font-size: 3rem;
+  }
+}
+body main .gradient section {
+  width: 100%;
+  margin: auto;
+  margin-top: 200px;
+  position: relative;
+}
+body main .gradient section .lunch-title {
+  height: 1px;
+  font-size: 20rem;
+  -webkit-text-stroke: 2px rgba(4, 187, 4, 0.411);
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  color: transparent;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media only screen and (max-width: 480px) {
+  body main .gradient section .lunch-title {
+    top: 30%;
+    font-size: 8rem;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  body main .gradient section .lunch-title {
+    font-size: 14rem;
+    top: 10%;
+  }
+}
+body main .gradient section .lunch-sub {
+  font-size: 2.7rem;
+  text-align: center;
+  font-weight: 100;
+  position: relative;
+  z-index: 10;
+}
+@media only screen and (max-width: 480px) {
+  body main .gradient section .lunch-sub {
+    font-size: 1.8rem;
+  }
+}
+body main .gradient section p {
+  padding: 30px 0;
+  font-size: 1.2rem;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+@media only screen and (max-width: 480px) {
+  body main .gradient section p {
+    width: 85%;
+  }
+}
+body main .gradient .menu h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 50px 0;
+}
+body main .gradient .menu .menu-content {
+  margin: auto;
+}
+@media only screen and (max-width: 480px) {
+  body main .gradient .menu .menu-content {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  body main .gradient .menu .menu-content {
+    flex-direction: column;
+  }
+}
+body main .gradient .menu .menu-content .menu-list {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  position: relative;
+}
+body main .gradient .menu .menu-content .menu-list.reverse {
+  flex-direction: row-reverse;
+}
+@media (max-width: 1024px) {
+  body main .gradient .menu .menu-content .menu-list.reverse {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1024px) {
+  body main .gradient .menu .menu-content .menu-list {
+    flex-direction: column;
+  }
+}
+body main .gradient .menu .menu-content .menu-list .menu-list-text {
+  margin: 0 auto;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  body main .gradient .menu .menu-content .menu-list .menu-list-text {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  body main .gradient .menu .menu-content .menu-list .menu-list-text {
+    margin-top: 20px;
+  }
+}
+body main .gradient .menu .menu-content .menu-list .menu-list-text h2 {
+  width: 100%;
+  font-size: 2rem;
+  text-align: left;
+}
+@media (max-width: 1024px) {
+  body main .gradient .menu .menu-content .menu-list .menu-list-text h2 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body main .gradient .menu .menu-content .menu-list .menu-list-text h2 {
+    text-align: center;
+  }
+}
+body main .gradient .menu .menu-content .menu-list .menu-list-text p {
+  font-size: 1.2rem;
+  text-align: left;
+}
+@media (max-width: 1024px) {
+  body main .gradient .menu .menu-content .menu-list .menu-list-text p {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body main .gradient .menu .menu-content .menu-list .menu-list-text p {
+    text-align: center;
+  }
+}
+body main .gradient .menu .menu-content .menu-list .photo {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 500px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  border: 20px solid white;
+  box-shadow: 5px 5px 10px gray;
+}
+@media only screen and (max-width: 480px) {
+  body main .gradient .menu .menu-content .menu-list .photo {
+    width: 100%;
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1300px) {
+  body main .gradient .menu .menu-content .menu-list .photo {
+    height: 300px;
+  }
+}
+body main .gradient .menu .menu-content .menu-list .photo.visible {
+  opacity: 1;
+  transform: translateY(0);
+}/*# sourceMappingURL=lunch.css.map */

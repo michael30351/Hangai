@@ -1,0 +1,31 @@
+@mixin flex-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin link-style($normal-color, $hover-color) {
+    text-decoration: none;
+    color: $normal-color;
+    font-size: 1.2rem;
+  
+    &:hover {
+      color: $hover-color;
+    }
+}
+@mixin burger-line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.5s ease-in-out;
+}
+  
+@mixin overlay-text-base {
+    color: white;
+    position: absolute;
+    left: 50%;
+    width: 85%;
+    transform: translateX(-50%);
+}
+  

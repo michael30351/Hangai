@@ -1,0 +1,205 @@
+body main {
+  position: relative;
+}
+body main h1 {
+  text-align: center;
+}
+body main .construction-header {
+  margin-top: 90px;
+  position: relative;
+}
+body main .construction-header img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(70%);
+}
+body main .construction-header h1 {
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+}
+@media only screen and (max-width: 480px) {
+  body main .construction-header h1 {
+    font-size: 3rem;
+  }
+}
+body main .construction-about {
+  position: relative;
+  margin-top: 100px;
+}
+body main .construction-about h1 {
+  font-size: 9rem;
+  color: gainsboro;
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  body main .construction-about h1 {
+    font-size: 3.1rem;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  body main .construction-about h1 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  body main .construction-about h1 {
+    font-size: 6rem;
+  }
+}
+body main .construction-about .text-anime {
+  font-size: 3.5rem;
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50px);
+  opacity: 0;
+}
+@media only screen and (max-width: 480px) {
+  body main .construction-about .text-anime {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    top: 20%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  body main .construction-about .text-anime {
+    font-size: 3rem;
+    top: 25%;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  body main .construction-about .text-anime {
+    font-size: 3rem;
+    top: 25%;
+  }
+}
+body main .construction-about .text-anime.active {
+  opacity: 1;
+  transform: translateY(0) translateX(-50%);
+  transition: opacity 1.5s, transform 0.8s;
+}
+body main .sub-title {
+  width: 70%;
+  margin: auto;
+  border-bottom: 4px solid rgb(3, 148, 3);
+}
+body main .sub-title h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+body main .slider {
+  position: relative;
+  width: 70%;
+  margin: 50px auto;
+  height: 600px;
+  margin-bottom: 100px;
+}
+body main .slider h1 {
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  body main .slider {
+    height: 400px;
+    width: 90%;
+  }
+}
+body main .slider .slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+body main .slider .slides .slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  height: 600px;
+}
+@media only screen and (max-width: 480px) {
+  body main .slider .slides .slide {
+    height: 400px;
+  }
+}
+body main .slider .slides .slide .slide-text {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  z-index: 100;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
+body main .slider .slides .slide .slide-text .slide-text-content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main .slider .slides .slide .slide-text .slide-text-content .title {
+  font-size: 1.35em;
+}
+@media only screen and (max-width: 480px) {
+  body main .slider .slides .slide .slide-text .slide-text-content .title {
+    font-size: 1.2rem;
+  }
+}
+body main .slider .slides .slide .slide-text .slide-text-content p {
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  body main .slider .slides .slide .slide-text .slide-text-content p {
+    font-size: 1rem;
+  }
+}
+body main .slider .slides .slide img {
+  width: 100%;
+  height: 600px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media only screen and (max-width: 480px) {
+  body main .slider .slides .slide img {
+    height: 400px;
+  }
+}
+body main .slider .arrow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 1000;
+}
+body main .slider .arrow-btn::before {
+  content: "";
+  display: inline-block;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  padding: 10px;
+}
+body main .slider .arrow-btn.prev {
+  left: 10px;
+}
+body main .slider .arrow-btn.prev::before {
+  transform: rotate(135deg);
+}
+body main .slider .arrow-btn.next {
+  right: 10px;
+}
+body main .slider .arrow-btn.next::before {
+  transform: rotate(-45deg);
+}/*# sourceMappingURL=construction.css.map */

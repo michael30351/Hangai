@@ -1,0 +1,73 @@
+@import '_variables';
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint=="ip-se" {
+        @media only screen and (max-width: $iphone-se) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint=="small" {
+        @media only screen and (max-width: $small-screen) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint=="medium" {
+        @media only screen and (min-width: #{($small-screen + 1)}) and (max-width: $medium-screen) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint=="tablet" {
+        @media only screen and (min-width: #{($medium-screen )}) and (max-width: $tablet-screen) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint=="desktop" {
+        @media only screen and (min-width: #{($small-screen + 1)}) and (max-width: $desktop-screen) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint=="burger" {
+        @media only screen and (max-width: $burger-screen) {
+            @content;
+        }
+    }
+
+    @if $breakpoint=="height" {
+        @media only screen and (max-height: $height) {
+            @content;
+        }
+    }
+}
+
+$base-font-size: 10px;
+
+@function bigfont($size) {
+    @return $base-font-size*$size;
+}
+
+$pc: 1080px;
+$tab: 768px;
+$sp: 480px;
+
+@mixin pc {
+    @media screen and (max-width: ($pc)) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and (max-width: ($tab)) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media screen and (max-width: ($sp)) {
+        @content;
+    }
+}
