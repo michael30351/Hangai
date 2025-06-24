@@ -5,7 +5,7 @@ body main h1 {
   text-align: center;
 }
 body main .construction-header {
-  margin-top: 90px;
+  margin-top: 60px;
   position: relative;
 }
 body main .construction-header img {
@@ -94,38 +94,50 @@ body main .sub-title h1 {
   text-align: center;
   font-size: 1.5rem;
 }
-body main .slider {
+body main .const-content {
+  display: flex;
+  justify-content: space-around;
   position: relative;
-  width: 70%;
-  margin: 50px auto;
-  height: 600px;
-  margin-bottom: 100px;
+  z-index: -10;
 }
-body main .slider h1 {
+@media only screen and (max-width: 480px) {
+  body main .const-content {
+    flex-direction: column;
+  }
+}
+body main .const-content .slider {
+  position: relative;
+  margin: 50px 50px;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+}
+body main .const-content .slider h1 {
   text-align: center;
 }
 @media only screen and (max-width: 480px) {
-  body main .slider {
+  body main .const-content .slider {
     height: 400px;
     width: 90%;
+    margin: 50px auto;
   }
 }
-body main .slider .slides {
+body main .const-content .slider .slides {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
-body main .slider .slides .slide {
+body main .const-content .slider .slides .slide {
   min-width: 100%;
   box-sizing: border-box;
   position: relative;
-  height: 600px;
+  height: 100%;
 }
 @media only screen and (max-width: 480px) {
-  body main .slider .slides .slide {
+  body main .const-content .slider .slides .slide {
     height: 400px;
   }
 }
-body main .slider .slides .slide .slide-text {
+body main .const-content .slider .slides .slide .slide-text {
   position: relative;
   width: 100%;
   height: 100px;
@@ -137,42 +149,37 @@ body main .slider .slides .slide .slide-text {
   color: white;
   background: rgba(0, 0, 0, 0.5);
 }
-body main .slider .slides .slide .slide-text .slide-text-content {
+body main .const-content .slider .slides .slide .slide-text .slide-text-content {
   width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-body main .slider .slides .slide .slide-text .slide-text-content .title {
+body main .const-content .slider .slides .slide .slide-text .slide-text-content .title {
   font-size: 1.35em;
 }
 @media only screen and (max-width: 480px) {
-  body main .slider .slides .slide .slide-text .slide-text-content .title {
+  body main .const-content .slider .slides .slide .slide-text .slide-text-content .title {
     font-size: 1.2rem;
   }
 }
-body main .slider .slides .slide .slide-text .slide-text-content p {
+body main .const-content .slider .slides .slide .slide-text .slide-text-content p {
   text-align: center;
 }
 @media only screen and (max-width: 480px) {
-  body main .slider .slides .slide .slide-text .slide-text-content p {
+  body main .const-content .slider .slides .slide .slide-text .slide-text-content p {
     font-size: 1rem;
   }
 }
-body main .slider .slides .slide img {
+body main .const-content .slider .slides .slide img {
   width: 100%;
-  height: 600px;
+  height: 400px;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media only screen and (max-width: 480px) {
-  body main .slider .slides .slide img {
-    height: 400px;
-  }
-}
-body main .slider .arrow-btn {
+body main .const-content .slider .arrow-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -184,22 +191,22 @@ body main .slider .arrow-btn {
   cursor: pointer;
   z-index: 1000;
 }
-body main .slider .arrow-btn::before {
+body main .const-content .slider .arrow-btn::before {
   content: "";
   display: inline-block;
   border: solid white;
   border-width: 0 3px 3px 0;
   padding: 10px;
 }
-body main .slider .arrow-btn.prev {
+body main .const-content .slider .arrow-btn.prev {
   left: 10px;
 }
-body main .slider .arrow-btn.prev::before {
+body main .const-content .slider .arrow-btn.prev::before {
   transform: rotate(135deg);
 }
-body main .slider .arrow-btn.next {
+body main .const-content .slider .arrow-btn.next {
   right: 10px;
 }
-body main .slider .arrow-btn.next::before {
+body main .const-content .slider .arrow-btn.next::before {
   transform: rotate(-45deg);
 }/*# sourceMappingURL=construction.css.map */
