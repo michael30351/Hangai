@@ -191,7 +191,7 @@ body .overlay .overlay-p {
 }
 @media (max-height: 668px) {
   body .overlay .overlay-p {
-    top: 15%;
+    top: 120px;
   }
 }
 body .overlay h1 {
@@ -217,7 +217,7 @@ body .overlay h1 {
 }
 @media (max-height: 668px) {
   body .overlay h1 {
-    top: 60%;
+    top: 400px;
   }
 }
 body .overlay .overlay-p2 {
@@ -238,7 +238,7 @@ body .overlay .overlay-p2 {
 }
 @media (max-height: 668px) {
   body .overlay .overlay-p2 {
-    top: 80%;
+    top: 525px;
   }
 }
 body main {
@@ -312,7 +312,7 @@ body main .news #news-ticker-container {
   border-bottom: 1px solid gainsboro;
   padding: 40px 20px;
   height: 40px;
-  width: 500px;
+  width: 550px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -332,7 +332,7 @@ body main .news #news-ticker-container #news-ticker {
 }
 @media only screen and (max-width: 480px) {
   body main .news #news-ticker-container #news-ticker {
-    width: 70%;
+    width: 85%;
     font-size: 1rem;
   }
 }
@@ -345,13 +345,15 @@ body main .news #news-ticker-container #controls {
   padding: 0 20px;
 }
 body main .news #news-ticker-container #controls button {
-  height: 30px;
+  height: 40px;
   line-height: 30px;
   display: flex;
   align-items: center;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  font-size: 1rem;
+  color: black;
 }
 @keyframes slide-up {
   from {
@@ -393,7 +395,7 @@ body main .message .message-container .text-anime {
 }
 @media only screen and (max-width: 480px) {
   body main .message .message-container .text-anime {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 }
 body main .message .message-container .text-anime.active {
@@ -414,7 +416,7 @@ body main .message p {
 @media only screen and (max-width: 480px) {
   body main .message p {
     font-size: 1rem;
-    width: 60%;
+    width: 70%;
   }
 }
 body main .continue-slider {
@@ -494,10 +496,10 @@ body main .feature .strong-point .text-anime {
 }
 @media only screen and (max-width: 480px) {
   body main .feature .strong-point .text-anime {
-    font-size: 2rem;
+    font-size: 2.5rem;
     width: 100%;
     text-align: center;
-    top: 55%;
+    top: 53%;
   }
 }
 body main .feature .strong-point .text-anime.active {
@@ -547,7 +549,7 @@ body main .feature .feature-flex .feature-content .text-anime {
   position: absolute;
   top: -15%;
   left: 30%;
-  color: rgb(3, 148, 3);
+  color: rgb(5, 180, 5);
   font-size: 7rem;
   font-weight: 500;
   opacity: 0;
@@ -556,9 +558,9 @@ body main .feature .feature-flex .feature-content .text-anime {
 }
 @media only screen and (max-width: 480px) {
   body main .feature .feature-flex .feature-content .text-anime {
-    font-size: 4rem;
-    top: -10%;
-    left: 41%;
+    font-size: 5rem;
+    top: -15%;
+    left: 10%;
     z-index: 100;
   }
 }
@@ -596,7 +598,7 @@ body main .feature .feature-flex .feature-text .text-anime.active {
   transition: opacity 1.5s, transform 0.8s;
 }
 body main .feature .feature-flex .feature-text p {
-  width: 70%;
+  width: 80%;
   margin: auto;
   line-height: 30px;
 }
@@ -634,7 +636,7 @@ body main .feature .feature-flex02 .feature-content02 .text-anime {
   position: absolute;
   top: -15%;
   right: 30%;
-  color: rgb(3, 148, 3);
+  color: rgb(5, 180, 5);
   font-size: 7rem;
   font-weight: 500;
   opacity: 0;
@@ -663,7 +665,7 @@ body main .feature .feature-flex02 .feature-text02 .text-anime.active {
   transition: opacity 1.5s, transform 0.8s;
 }
 body main .feature .feature-flex02 .feature-text02 p {
-  width: 70%;
+  width: 80%;
   margin: auto;
   line-height: 30px;
 }
@@ -716,9 +718,9 @@ body main .feature .feature-flex02-copy .feature-content02 .text-anime {
 }
 @media only screen and (max-width: 480px) {
   body main .feature .feature-flex02-copy .feature-content02 .text-anime {
-    font-size: 4rem;
-    top: -10%;
-    left: 41%;
+    font-size: 5rem;
+    top: -15%;
+    left: 10%;
     z-index: 100;
   }
 }
@@ -756,7 +758,7 @@ body main .feature .feature-flex02-copy .feature-text02 .text-anime.active {
   transition: opacity 1.5s, transform 0.8s;
 }
 body main .feature .feature-flex02-copy .feature-text02 p {
-  width: 70%;
+  width: 80%;
   margin: auto;
   line-height: 30px;
 }
@@ -830,6 +832,11 @@ body main .swiper .swiper-slide .float-1 {
   margin: auto;
   box-shadow: 30px 30px 30px rgb(91, 91, 91);
   background: white;
+}
+@media only screen and (max-width: 480px) {
+  body main .swiper .swiper-slide .float-1 {
+    width: 95%;
+  }
 }
 body main .swiper .swiper-slide .float-1 a {
   text-decoration: none;

@@ -108,7 +108,7 @@ var swiper = new Swiper(".mySwiper", {
         disableOnInteraction: false,
         reverseDirection: false,
         pauseOnMouseEnter: true,
-        delay: 5000,
+        delay: 3000,
     },
     effect: "coverflow",
     centeredSlides: true,
