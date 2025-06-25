@@ -176,12 +176,12 @@ body .overlay .overlay-p {
 @media only screen and (max-width: 480px) {
   body .overlay .overlay-p {
     font-size: 1rem;
-    top: 15%;
+    top: 150px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   body .overlay .overlay-p {
-    top: 25%;
+    top: 400px;
   }
 }
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
@@ -207,7 +207,7 @@ body .overlay h1 {
 @media only screen and (max-width: 480px) {
   body .overlay h1 {
     font-size: 25px;
-    top: 50%;
+    top: 450px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -233,7 +233,7 @@ body .overlay .overlay-p2 {
 @media only screen and (max-width: 480px) {
   body .overlay .overlay-p2 {
     font-size: 20px;
-    top: 68%;
+    top: 600px;
   }
 }
 @media (max-height: 668px) {

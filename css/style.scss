@@ -181,11 +181,11 @@ body {
 
             @include responsive("small") {
                 font-size: 1rem;
-                top: 15%;
+                top: 150px;
             }
 
             @include responsive("medium") {
-                top: 25%;
+                top: 400px;
 
             }
 
@@ -211,7 +211,7 @@ body {
 
             @include responsive("small") {
                 font-size: 25px;
-                top: 50%;
+                top: 450px;
             }
 
             @include responsive("medium") {
@@ -235,7 +235,7 @@ body {
 
             @include responsive("small") {
                 font-size: 20px;
-                top: 68%;
+                top: 600px;
             }
             @media (max-height: 668px) {
                 top: 525px;
